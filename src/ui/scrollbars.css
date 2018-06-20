@@ -5,16 +5,16 @@
 }
 
 ::-webkit-scrollbar-track {
-  background-image: var(--win95-img-scrollbar-bg);
+  background-image: var(--img-scrollbar-bg);
   image-rendering: pixelated;
 }
 
 ::-webkit-scrollbar-track:active {
-  background-image: var(--win95-img-scrollbar-bg-active);
+  background-image: var(--img-scrollbar-bg-active);
 }
 
 ::-webkit-scrollbar-thumb {
-/*   @include win95-emboss-border; */
+  /* @include emboss-border; */
   border-top: 1px solid var(--ui-main-color);
   border-left: 1px solid var(--ui-main-color);
   border-right: 1px solid var(--ui-emboss-outer-shadow-color);
@@ -35,14 +35,14 @@
   width: 16px;
   height: 16px;
   background-color: var(--ui-main-color);
-  background-image: var(--win95-img-resizer);
+  background-image: var(--img-resizer);
   background-position: bottom right;
   background-repeat: no-repeat;
   image-rendering: pixelated;
 }
 
 ::-webkit-scrollbar-button {
-/*   @include win95-emboss-border; */
+  /* @include emboss-border; */
   border-top: 1px solid var(--ui-main-color);
   border-left: 1px solid var(--ui-main-color);
   border-right: 1px solid var(--ui-emboss-outer-shadow-color);
@@ -63,19 +63,19 @@
 }
 
 ::-webkit-scrollbar-button:horizontal:decrement {
-  background-image: var(--win95-img-left-arrow);
+  background-image: var(--img-left-arrow);
 }
 
 ::-webkit-scrollbar-button:horizontal:increment {
-  background-image: var(--win95-img-right-arrow);
+  background-image: var(--img-right-arrow);
 }
 
 ::-webkit-scrollbar-button:vertical:decrement {
-  background-image: var(--win95-img-up-arrow);
+  background-image: var(--img-up-arrow);
 }
 
 ::-webkit-scrollbar-button:vertical:increment {
-  background-image: var(--win95-img-down-arrow);
+  background-image: var(--img-down-arrow);
 }
 
 ::-webkit-scrollbar-button:horizontal:increment:start { display: none; }
@@ -84,9 +84,9 @@
 ::-webkit-scrollbar-button:vertical:decrement:end { display: none; }
 
 ::-webkit-scrollbar-button:active {
-  border-top: 1px solid var(--win95-ui-inner-shadow-color);
-  border-left: 1px solid var(--win95-ui-inner-shadow-color);
-  border-bottom: 1px solid var(--win95-ui-inner-shadow-color);
-  border-right: 1px solid var(--win95-ui-inner-shadow-color);
+  border-top: 1px solid var(--ui-inner-shadow-color);
+  border-left: 1px solid var(--ui-inner-shadow-color);
+  border-bottom: 1px solid var(--ui-inner-shadow-color);
+  border-right: 1px solid var(--ui-inner-shadow-color);
   box-shadow: none;
 }

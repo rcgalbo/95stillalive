@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
-import './Windows95.css'
 import Taskbar from './components/Taskbar'
 import Window from './components/Window'
+
+import './Windows95.css'
+import './ui/scrollbars.css'
 
 class Windows95 extends Component {
   render () {

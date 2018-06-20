@@ -4,12 +4,11 @@
   "private": true,
   "dependencies": {
     "create-react-app": "^1.5.2",
-    "prop-types": "^15.6.2",
     "react": "^16.4.1",
-    "react-dnd": "^5.0.0",
-    "react-dom": "^16.4.1"
+    "react-dom": "^16.4.1",
+    "react-dnd": "^5.0.0"
   },
-  "proxy": "https://create-react-app-sample.glitch.me",
+  "proxy": "https://windows95.glitch.me",
   "devDependencies": {
     "react-scripts": "0.9.5"
   },
