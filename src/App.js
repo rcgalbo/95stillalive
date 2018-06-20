@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-import Taskbar from 'Taskbar'
+import Taskbar from './components/Taskbar'
 
 class App extends Component {
   render() {
