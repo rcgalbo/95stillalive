@@ -4,7 +4,9 @@ import './styles.css'
 class StartButton extends Component {
   render () {
     return (
-      <button className="StartButton" />
+      <button className="StartButton">
+        Start
+      </button>
     )
   }
 }
