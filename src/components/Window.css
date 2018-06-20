@@ -15,50 +15,60 @@
 }
 
 :root {
-  --scrollbar-up-arrow: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGklEQVR4AWMYxuA/SYphmETFhDX9x4mHGQAAcL4P8dQiMq8AAAAASUVORK5CYII=');
-  --scrollbar-down-arrow: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAF0lEQVQY02NgoBf4jwJxSOHQhcNAOgMAWWAP8Rv2U3UAAAAASUVORK5CYII=');
-  --scrollbar-left-arrow: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHklEQVQY02NgoBT8xyX8H5fwf1zCpOjAYwceV1EEAAO2D/HsQ4vsAAAAAElFTkSuQmCC');
-  --scrollbar-right-arrow: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHUlEQVQY02NgIB/8xy3xH7fEf9wS/0nUQZqrKAYAK44P8ZRmzLQAAAAASUVORK5CYII=');
-  --scrollbar-scrollbar-bg: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFElEQVQIW2M4fPz0////GYAYyAIASnoKpV3w4kgAAAAASUVORK5CYII=');
-  --scrollbar-scrollbar-bg-active: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAEElEQVQIW2No6+pjgAAgCwAWogM9VKrgGQAAAABJRU5ErkJggg==');
-  --scrollbar-resizer: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==');
+  --win95-img-up-arrow: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAAGklEQVR4AWMYxuA/SYphmETFhDX9x4mHGQAAcL4P8dQiMq8AAAAASUVORK5CYII=');
+  --win95-img-down-arrow: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAF0lEQVQY02NgoBf4jwJxSOHQhcNAOgMAWWAP8Rv2U3UAAAAASUVORK5CYII=');
+  --win95-img-left-arrow: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHklEQVQY02NgoBT8xyX8H5fwf1zCpOjAYwceV1EEAAO2D/HsQ4vsAAAAAElFTkSuQmCC');
+  --win95-img-right-arrow: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAQAAAD8fJRsAAAAHUlEQVQY02NgIB/8xy3xH7fEf9wS/0nUQZqrKAYAK44P8ZRmzLQAAAAASUVORK5CYII=');
+  --win95-img-scrollbar-bg: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFElEQVQIW2M4fPz0////GYAYyAIASnoKpV3w4kgAAAAASUVORK5CYII=');
+  --win95-img-scrollbar-bg-active: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAEElEQVQIW2No6+pjgAAgCwAWogM9VKrgGQAAAABJRU5ErkJggg==');
+  --win95-img-resizer: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAN0lEQVR4Ae3MgQUAMBRDwU5fFF05lb/CARTBw2Ulof0DxPtcwp3hNuEYnjbcEW4TjuFpwx3h9gMWGgZ2Y/PT2gAAAABJRU5ErkJggg==');
 }
 
 .win95-well-border {
-  border-top: 1px solid var(--ui-outer-shadow-color);
-  border-left: 1px solid var(--ui-outer-shadow-color);
+  border-top: 1px solid var(--ui-emboss-outer-shadow-color);
+  border-left: 1px solid var(--ui-emboss-outer-shadow-color);
   border-right: 1px solid var(--ui-main-color);
   border-bottom: 1px solid var(--ui-main-color);
-  box-shadow: -1px -1px 0 var(--ui-inner-shadow-color), -1px 0 0 var(--ui-inner-shadow-color), 0 -1px 0 0 var(--ui-inner-shadow-color), 1px 0 0 var(--ui-highlight-color), 1px 1px 0 var(--ui-highlight-color), 0 1px 0 var(--ui-highlight-color);
+  box-shadow: -1px -1px 0 var(--ui-emboss-inner-shadow-color), -1px 0 0 var(--ui-emboss-inner-shadow-color), 0 -1px 0 0 var(--ui-emboss-inner-shadow-color), 1px 0 0 var(--ui-emboss-highlight-color), 1px 1px 0 var(--ui-emboss-highlight-color), 0 1px 0 var(--ui-emboss-highlight-color);
 }
 
 .win95-emboss-border {
   border-top: 1px solid var(--ui-main-color);
   border-left: 1px solid var(--ui-main-color);
-  border-right: 1px solid var(--ui-outer-shadow-color);
-  border-bottom: 1px solid var(--ui-outer-shadow-color);
-  box-shadow: inset 1px 1px 0 0 var(--ui-highlight-color), inset -1px -1px 0 0 var(--ui-inner-shadow-color);
+  border-right: 1px solid var(--ui-emboss-outer-shadow-color);
+  border-bottom: 1px solid var(--ui-emboss-outer-shadow-color);
+  box-shadow: inset 1px 1px 0 0 var(--ui-emboss-highlight-color), inset -1px -1px 0 0 var(--ui-emboss-inner-shadow-color);
 }
 
 .win95-depressed-border {
-  border-top: 1px solid var(--ui-outer-shadow-color);
-  border-left: 1px solid var(--ui-outer-shadow-color);
-  border-bottom: 1px solid var(--ui-inner-shadow-color);
-  border-right: 1px solid var(--ui-inner-shadow-color);
-  box-shadow: inset 1px 1px 0 0 var(--ui-inner-shadow-color), 1px 1px 0 0 var(--ui-outer-shadow-color), 1px 0 0 0 var(--ui-outer-shadow-color), 0 1px 0 0 var(--ui-outer-shadow-color);
+  border-top: 1px solid var(--ui-emboss-outer-shadow-color);
+  border-left: 1px solid var(--ui-emboss-outer-shadow-color);
+  border-bottom: 1px solid var(--ui-emboss-inner-shadow-color);
+  border-right: 1px solid var(--ui-emboss-inner-shadow-color);
+  box-shadow: inset 1px 1px 0 0 var(--ui-emboss-inner-shadow-color), 1px 1px 0 0 var(--ui-emboss-outer-shadow-color), 1px 0 0 0 var(--ui-emboss-outer-shadow-color), 0 1px 0 0 var(--ui-emboss-outer-shadow-color);
+}
+
+.Window-main {
+  width: 100%;
+  height: calc(100% - 20px);
+  margin-top: 2px;
 }
 
 .frame {
-  width: 400px;
-  height: 150px;
+  width: 100%;
+  height: 100%;
   overflow: auto;
   margin-bottom: 8px;
   background-color: white;
   padding: 8px;
+
 }
 
 .content {
   width: 100%;
+  user-select: auto;
+  font-family: 'Times New Roman', serif;
+  font-size: 16px;
 }
 
 .content p:first-child {
@@ -98,24 +108,24 @@ textarea:focus {
 /*   @include win95-emboss-border; */
   border-top: 1px solid var(--ui-main-color);
   border-left: 1px solid var(--ui-main-color);
-  border-right: 1px solid var(--ui-outer-shadow-color);
-  border-bottom: 1px solid var(--ui-outer-shadow-color);
-  box-shadow: inset 1px 1px 0 0 var(--ui-highlight-color), inset -1px -1px 0 0 var(--ui-inner-shadow-color);
+  border-right: 1px solid var(--ui-emboss-outer-shadow-color);
+  border-bottom: 1px solid var(--ui-emboss-outer-shadow-color);
+  box-shadow: inset 1px 1px 0 0 var(--ui-emboss-highlight-color), inset -1px -1px 0 0 var(--ui-emboss-inner-shadow-color);
 
   width: 16px;
   height: 16px;
-  background-color: var(--win95-ui-main-color);
+  background-color: var(--ui-main-color);
   z-index: 1;
 }
 
 ::-webkit-scrollbar-corner {
-  background-color: var(--win95-ui-main-color);
+  background-color: var(--ui-main-color);
 }
 
 ::-webkit-resizer {
   width: 16px;
   height: 16px;
-  background-color: var(--win95-ui-main-color);
+  background-color: var(--ui-main-color);
   background-image: var(--win95-img-resizer);
   background-position: bottom right;
   background-repeat: no-repeat;
@@ -126,14 +136,14 @@ textarea:focus {
 /*   @include win95-emboss-border; */
   border-top: 1px solid var(--ui-main-color);
   border-left: 1px solid var(--ui-main-color);
-  border-right: 1px solid var(--ui-outer-shadow-color);
-  border-bottom: 1px solid var(--ui-outer-shadow-color);
-  box-shadow: inset 1px 1px 0 0 var(--ui-highlight-color), inset -1px -1px 0 0 var(--ui-inner-shadow-color);
+  border-right: 1px solid var(--ui-emboss-outer-shadow-color);
+  border-bottom: 1px solid var(--ui-emboss-outer-shadow-color);
+  box-shadow: inset 1px 1px 0 0 var(--ui-emboss-highlight-color), inset -1px -1px 0 0 var(--ui-emboss-inner-shadow-color);
 
   display: block;
   width: 16px;
   height: 16px;
-  background-color: var(--win95-ui-main-color;
+  background-color: var(--ui-main-color);
   image-rendering: pixelated;
   background-repeat: no-repeat;
   background-position: center center;

@@ -57,9 +57,9 @@
 .Windows95-desktop *,
 .Windows95-desktop *::after,
 .Windows95-desktop *::before {
-  box-sizing: border-box;
-  user-select: none;
-  overflow: hidden;
+  box-sizing: inherit;
+  user-select: inherit;
+  overflow: inherit;
 }
 
 .Windows95-desktop {
@@ -74,6 +74,10 @@
   font-size: var(--font-size);
   font-smooth: never;
   -webkit-font-smoothing: none;
+  
+  box-sizing: border-box;
+  user-select: none;
+  overflow: hidden;
 }
 
 .Windows95-desktop-background {
