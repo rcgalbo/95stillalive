@@ -27,8 +27,10 @@ class TitleBar extends Component {
     
     return (
       <div className="TitleBar">
-        <img className="TitleBar-icon" src={iconUrl} onDoubleClick={this.onClickClose} />
-        <span className="TitleBar-text">{title}</span>
+        <div className="TitleBar-title">
+          <img className="TitleBar-icon" src={iconUrl} onDoubleClick={this.onClickClose} />
+          <div className="TitleBar-text">{title}</div>
+        </div>
         <div className="TitleBar-controls">
           <button className="TitleBar-control-minimize" onClick={this.onClickMinimize} />
           <button className="TitleBar-control-maximize" onClick={this.onClickMaximize} />

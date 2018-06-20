@@ -1,9 +1,12 @@
 .TitleBar {
+  display: flex;
+  justify-content: space-between;
   background-color: #00a;
   height: 18px;
-  user-select: none;
   color: white;
-  cursor: default;
+}
+
+.TitleBar-title {
 }
 
 .TitleBar-icon {
@@ -16,6 +19,8 @@
 
 .TitleBar-text {
   font-weight: 600;
+  display: inline-block;
+  line-height: 14px;
 }
 
 .TitleBar-controls {
