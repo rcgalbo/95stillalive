@@ -6,6 +6,7 @@ class Taskbar extends Component {
     return (
       <div className="Taskbar">
         <button className="StartButton" />
+        <div className="NotificationWell" />
       </div>
     )
   }
