@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import StartButton from './StartButton'
+import NotificationArea from './NotificationArea'
 import './Taskbar.css'
 
 class Taskbar extends Component {
@@ -7,7 +8,7 @@ class Taskbar extends Component {
     return (
       <div className="Taskbar">
         <StartButton />
-        <div className="NotificationWell" />
+        <div className="NotificationArea" />
       </div>
     )
   }
