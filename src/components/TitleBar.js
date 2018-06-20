@@ -11,13 +11,14 @@ class TitleBar extends Component {
     this.onClickClose = this.onClickClose.bind(this)
   }
 
-  onClickMinimize () {
+  onClickMinimize (event) {
   }
   
-  onClickMaximize () {
+  onClickMaximize (event) {
   }
   
-  onClickClose () {
+  onClickClose (event) {
+    this.handleClose()
   }
 
   render () {

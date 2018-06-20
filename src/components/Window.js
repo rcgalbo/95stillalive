@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import TitleBar from 'TitleBar'
+import TitleBar from './TitleBar'
 import './Window.css'
 
 class Window extends Component {

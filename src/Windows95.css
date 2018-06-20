@@ -6,7 +6,7 @@
   --default-desktop-background-color: #54aaaa;
   
   --font-family: 'MS Sans Serif', sans-serif;
-  --root-font-size: 11px;
+  --font-size: 11px;
 
   --editor-font-family: 'Courier New', monospace;
 
@@ -67,6 +67,7 @@
   overflow: hidden;
 
   font-family: var(--font-family);
+  font-size: var(--font-size);
   font-smooth: never;
   -webkit-font-smoothing: none;
 }
