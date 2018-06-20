@@ -1,0 +1,12 @@
+:root {
+  --main-ui-color: #c3c7cb;
+  --default-desktop-background-color: #54aaaa;
+}
+
+.Windows95-desktop {
+  
+}
+
+.Windows95-desktop-background {
+  background-color: var(--default-desktop-background-color);
+}

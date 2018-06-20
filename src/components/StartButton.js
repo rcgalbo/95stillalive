@@ -1,15 +1,12 @@
 import React, { Component } from 'react'
-import './StartButton.css'
+import './styles.css'
 
-class Taskbar extends Component {
-  render() {
+class StartButton extends Component {
+  render () {
     return (
-      <div className="Taskbar">
-        <button className="StartButton" />
-        <div className="NotificationWell" />
-      </div>
+      <button className="StartButton" />
     )
   }
 }
 
-export default Taskbar
+export default StartButton

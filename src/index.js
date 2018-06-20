@@ -1,9 +1,9 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
+import React from 'react'
+import ReactDOM from 'react-dom'
+import Windows95 from './Windows95'
+import './index.css'
 
 ReactDOM.render(
-  <App />,
+  <Windows95 />,
   document.getElementById('root')
-);
+)
