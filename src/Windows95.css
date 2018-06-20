@@ -67,7 +67,6 @@
 .Windows95-desktop *::before {
   box-sizing: inherit;
   user-select: inherit;
-  overflow: inherit;
 }
 
 .Windows95-desktop {

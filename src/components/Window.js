@@ -1,33 +1,10 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import { DragSource } from 'react-dnd'
 import TitleBar from './TitleBar'
 import './Window.css'
 
-/**
- * Implements the drag source contract.
- */
-const cardSource = {
-  beginDrag (props) {
-    return {
-      text: props.text
-    }
-  }
-}
-
-/**
- * Specifies the props to inject into your component.
- */
-function collect (connect, monitor) {
-  return {
-    connectDragSource: connect.dragSource(),
-    isDragging: monitor.isDragging()
-  }
-}
-
 class Window extends Component {
   render () {
-    const { isDragging, connectDragSource } = this.props
     const style = {
       width: `${this.props.width}px`,
       height: `${this.props.height}px`,
@@ -35,7 +12,7 @@ class Window extends Component {
       top: `${this.props.y}px`,
     }
 
-    return connectDragSource(
+    return (
       <div className="Window" style={style}>
         <TitleBar handleClose={() => {}} />
         <div className="MenuBar" />
@@ -60,11 +37,7 @@ Window.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
   x: PropTypes.number,
-  y: PropTypes.number,
-  
-  // Injected by React DnD:
-  isDragging: PropTypes.bool.isRequired,
-  connectDragSource: PropTypes.func.isRequired
+  y: PropTypes.number
 }
 
 Window.defaultProps = {
@@ -74,4 +47,4 @@ Window.defaultProps = {
   y: 0
 }
 
-export default DragSource(ItemTypes.CARD, cardSource, collect)(Window)
+export default Window
