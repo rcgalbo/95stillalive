@@ -1,0 +1,55 @@
+.TitleBar-controls {
+  float: right;
+}
+
+.TitleBar-control-minimize,
+.TitleBar-control-maximize,
+.TitleBar-control-close {
+  -webkit-app-region: no-drag;
+  width: 16px;
+  min-width: auto !important;
+  height: 14px;
+  border-top: 1px solid white;
+  border-left: 1px solid white;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  box-shadow: inset -1px -1px 0 0 #868a8e;
+  margin-top: 2px;
+  margin-right: 2px !important;
+
+  color: var(--ui-component-text-color);
+  background-repeat: no-repeat;
+  background-position: 2px 1px;
+  padding: 0;
+  background-size: 9px;
+  cursor: default;
+
+  /* Override button style */
+  background-color: var(--ui-base-color);
+}
+
+.TitleBar-control-minimize:focus,
+.TitleBar-control-maximize:focus,
+.TitleBar-control-close:focus {
+  outline: none;
+}
+
+.TitleBar-control-minimize:active,
+.TitleBar-control-maximize:active,
+.TitleBar-control-close:active {
+  background-position: 3px 3px;
+  margin-top: 1px;
+}
+
+.TitleBar-control-minimize {
+  background-image: url('https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fbutton_minimize.png?1529523359033');
+  margin-right: 0 !important;
+}
+
+.TitleBar-control-maximize {
+  background-image: url('https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fbutton_maximize.png?1529523358680');
+}
+
+.TitleBar-control-close {
+  background-image: url('../data/imgs/button_close.png');
+}
