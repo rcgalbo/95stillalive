@@ -6,6 +6,18 @@
   cursor: default;
 }
 
+.TitleBar-icon {
+  width: 16px;
+  height: 16px;
+  margin-top: 1px;
+  margin-left: 2px;
+  margin-right: 4px;
+}
+
+.TitleBar-text {
+  font-weight: 600;
+}
+
 .TitleBar-controls {
   float: right;
 }

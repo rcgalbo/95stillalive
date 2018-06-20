@@ -18,14 +18,17 @@ class TitleBar extends Component {
   }
   
   onClickClose (event) {
-    this.handleClose()
+    this.props.handleClose()
   }
 
   render () {
+    const iconUrl = 'https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fpicture_icon.png?1529523359727'
+    const title = 'Sample window'
+    
     return (
       <div className="TitleBar">
-        <img src="./data/imgs/picture_icon.png" width="16" height="16" onDoubleClick={this.onClickClose} />
-        <span className="TitleBar-text">Sample window</span>
+        <img className="TitleBar-icon" src={iconUrl} onDoubleClick={this.onClickClose} />
+        <span className="TitleBar-text">{title}</span>
         <div className="TitleBar-controls">
           <button className="TitleBar-control-minimize" onClick={this.onClickMinimize} />
           <button className="TitleBar-control-maximize" onClick={this.onClickMaximize} />
@@ -37,6 +40,8 @@ class TitleBar extends Component {
 }
 
 TitleBar.propTypes = {
+  iconUrl: PropTypes.string,
+  title: PropTypes.string,
   handleClose: PropTypes.func
 }
 
