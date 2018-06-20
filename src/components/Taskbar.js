@@ -8,7 +8,7 @@ class Taskbar extends Component {
     return (
       <div className="Taskbar">
         <StartButton />
-        <div className="NotificationArea" />
+        <NotificationArea />
       </div>
     )
   }
