@@ -1,3 +1,11 @@
+.TitleBar {
+  background-color: #00a;
+  height: 18px;
+  user-select: none;
+  color: white;
+  cursor: default;
+}
+
 .TitleBar-controls {
   float: right;
 }

@@ -1,10 +1,9 @@
 .Window {
   display: block; /* Default display mode */
+  position: absolute;
   width: 250px;
-  padding: 28px 7px 8px;
+  padding: 2px;
   font-weight: 200;
-  font-size: 1rem;
-  text-align: center;
   color: var(--ui-component-text-color);
   background-color: var(--ui-base-color);
   pointer-events: auto;
