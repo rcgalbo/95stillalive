@@ -12,4 +12,6 @@
   box-shadow: inset -1px -1px var(--ui-shadow-color);
   background-color: var(--ui-main-color);
   outline: -2px dotted black;
+  
+  font-weight: 600;
 }

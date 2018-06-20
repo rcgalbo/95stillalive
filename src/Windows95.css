@@ -1,21 +1,25 @@
 
 /* CSS Variables */
 .Windows95-desktop {
-  --ui-shadow-color: #868a8e;
   --ui-main-color: #c3c7cb;
+
+  --ui-emboss-highlight-color: white;
+  --ui-emboss-inner-shadow-color: #868a8e;
+  --ui-emboss-outer-shadow-color: black;
+
   --default-desktop-background-color: #54aaaa;
   
   --font-family: 'MS Sans Serif', sans-serif;
   --font-size: 11px;
 
   --editor-font-family: 'Courier New', monospace;
-
+  
   --ui-editor-background-color: #1c1f24;
   --ui-base-color: #c3c7cb; /* win95 default background color */
   --ui-component-color: #c3c7cb;
   --ui-element-color: #36383e;
   --ui-active-color: #3d3f46;
-  --ui-highlight-color: yellow;
+
   --ui-highlight-color-2: rgb(221, 221, 0);
   --ui-component-text-color: #000;
   --ui-link-text-color: #e1eeee;
