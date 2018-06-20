@@ -1,10 +1,33 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
+import { DragSource } from 'react-dnd'
 import TitleBar from './TitleBar'
 import './Window.css'
 
+/**
+ * Implements the drag source contract.
+ */
+const cardSource = {
+  beginDrag (props) {
+    return {
+      text: props.text
+    }
+  }
+}
+
+/**
+ * Specifies the props to inject into your component.
+ */
+function collect (connect, monitor) {
+  return {
+    connectDragSource: connect.dragSource(),
+    isDragging: monitor.isDragging()
+  }
+}
+
 class Window extends Component {
   render () {
+    const { isDragging, connectDragSource } = this.props
     const style = {
       width: `${this.props.width}px`,
       height: `${this.props.height}px`,
@@ -12,14 +35,14 @@ class Window extends Component {
       top: `${this.props.y}px`,
     }
 
-    return (
+    return connectDragSource(
       <div className="Window" style={style}>
         <TitleBar handleClose={() => {}} />
         <div className="MenuBar" />
 
         <div className="Window-main">
-          <div class="frame win95-well-border">
-            <div class="content">
+          <div className="frame win95-well-border">
+            <div className="content">
               <p>Lorem ipsum dolor sit amet, no eum quas fuisset accusamus, his eirmod admodum ut, et mea facete sententiae dissentias. Sea augue affert in. An eam illum vituperata. Reque gloriatur no nec, ex vix audiam deseruisse. Has quas graeco docendi te, his cu option forensibus definitiones. Eos probatus phaedrum no, no eos wisi meliore, est ne viderer legendos.</p>
               <p>Nam percipitur neglegentur ei, vocibus temporibus signiferumque ut mea, pro modo nemore oporteat ne. Vis no alienum prodesset, pri nostrud dolorum definitiones ex. Vix ad audire democritum, te nam sapientem disputationi. Usu id reque suavitate sententiae, eu dolor ullamcorper theophrastus eos, id has vocibus legendos. Dicat antiopam iudicabit cu nec, eam vidit partem volumus ex, diceret albucius consulatu mea no.</p>
               <p>Ius vide facer oportere te, ne cum graeco facete aliquip, an choro vituperatoribus mel. Pro ea minim oblique nonumes, nobis gloriatur vituperatoribus his ne. Ex tempor mollis mediocritatem vis. Ne lorem intellegat vel. Ex sale tantas per, pro fugit tempor in.</p>
@@ -37,7 +60,11 @@ Window.propTypes = {
   width: PropTypes.number,
   height: PropTypes.number,
   x: PropTypes.number,
-  y: PropTypes.number
+  y: PropTypes.number,
+  
+  // Injected by React DnD:
+  isDragging: PropTypes.bool.isRequired,
+  connectDragSource: PropTypes.func.isRequired
 }
 
 Window.defaultProps = {
@@ -47,4 +74,4 @@ Window.defaultProps = {
   y: 0
 }
 
-export default Window
+export default DragSource(ItemTypes.CARD, cardSource, collect)(Window)
