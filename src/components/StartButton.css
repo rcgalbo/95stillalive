@@ -8,10 +8,16 @@
   font-weight: 600;
 }
 
-.StartButton img {
+.StartButton-icon {
   width: 16px;
   height: 16px;
   position: absolute;
   left: 3px;
   top: 2px;
+}
+
+.StartButton-label {
+  position: absolute;
+  left: 22px;
+  top: 5px;
 }
