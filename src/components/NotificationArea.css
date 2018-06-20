@@ -4,8 +4,8 @@
   width: 44px;
   height: 22px;
   bottom: 2px;
-  border-top: 1px solid var(--ui-shadow-color);
-  border-left: 1px solid var(--ui-shadow-color);
+  border-top: 1px solid var(--ui-emboss-inner-shadow-color);
+  border-left: 1px solid var(--ui-emboss-inner-shadow-color);
   border-right: 1px solid white;
   border-bottom: 1px solid white;
   background-color: var(--ui-main-color);
