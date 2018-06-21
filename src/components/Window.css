@@ -40,8 +40,8 @@
 
 .Window-main {
   width: 100%;
-  height: calc(100% - 20px);
-  margin-top: 2px;
+  height: calc(100% - 22px);
+  margin-top: 3px;
 }
 
 .frame {

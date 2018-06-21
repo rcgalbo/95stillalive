@@ -36,11 +36,6 @@
   width: 16px;
   min-width: auto !important;
   height: 14px;
-/*   border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid black;
-  border-bottom: 1px solid black;
-  box-shadow: inset -1px -1px 0 0 #868a8e; */
   margin-top: 2px;
   margin-right: 2px !important;
 
@@ -65,7 +60,7 @@
 
 .TitleBar-control-minimize {
   background-image: url('https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fbutton_minimize.png?1529523359033');
-  margin-right: 1px !important;
+  margin-right: 0 !important;
 }
 
 .TitleBar-control-maximize {

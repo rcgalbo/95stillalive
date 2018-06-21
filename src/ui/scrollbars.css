@@ -2,6 +2,10 @@
 ::-webkit-scrollbar {
   width: 16px;
   height: 16px;
+  
+  --img-scrollbar-bg: url('https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fwin95_scrollbar_bg.png?1529523357829');
+  --img-scrollbar-bg-active: url('https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fwin95_scrollbar_bg_active.png?1529523357981');
+  --img-resizer: url('https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fwin95_drag_corner.png?1529523357428');
 }
 
 ::-webkit-scrollbar-track {
