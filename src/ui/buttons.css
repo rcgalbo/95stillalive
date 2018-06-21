@@ -6,7 +6,7 @@ button {
   border-right: 1px solid var(--ui-emboss-inner-shadow-color);
   border-bottom: 1px solid var(--ui-emboss-inner-shadow-color);
   box-shadow: 1px 0 0 0 var(--ui-emboss-outer-shadow-color), 0 1px 0 0 var(--ui-emboss-outer-shadow-color), 1px 1px 0 0 var(--ui-emboss-outer-shadow-color);
-  background-color: var(--ui-base-color);
+  background-color: var(--ui-main-color);
   font-family: var(--font-family);
   font-size: var(--font-size);
   color: var(--font-color);

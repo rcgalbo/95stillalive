@@ -22,9 +22,8 @@ class TitleBar extends Component {
   }
 
   render () {
-    const iconUrl = 'https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fpicture_icon.png?1529523359727'
-    const title = 'Sample window'
-    
+    const { iconUrl, title } = this.props
+
     return (
       <div className="TitleBar">
         <div className="TitleBar-title">
@@ -48,6 +47,8 @@ TitleBar.propTypes = {
 }
 
 TitleBar.defaultProps = {
+  iconUrl: 'https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fpicture_icon.png?1529523359727',
+  title: 'Window',
   handleClose: () => {}
 }
 

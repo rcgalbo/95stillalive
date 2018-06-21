@@ -19,10 +19,10 @@
 }
 
 .TitleBar-text {
-  font-weight: 600;
   display: inline-block;
-  top: 4px;
   position: absolute;
+  top: 3px;
+  font-weight: 600;
 }
 
 .TitleBar-controls {
@@ -36,23 +36,18 @@
   width: 16px;
   min-width: auto !important;
   height: 14px;
-  border-top: 1px solid white;
+/*   border-top: 1px solid white;
   border-left: 1px solid white;
   border-right: 1px solid black;
   border-bottom: 1px solid black;
-  box-shadow: inset -1px -1px 0 0 #868a8e;
+  box-shadow: inset -1px -1px 0 0 #868a8e; */
   margin-top: 2px;
   margin-right: 2px !important;
 
-  color: var(--ui-component-text-color);
   background-repeat: no-repeat;
   background-position: 2px 1px;
   padding: 0;
   background-size: 9px;
-  cursor: default;
-
-  /* Override button style */
-  background-color: var(--ui-base-color);
 }
 
 .TitleBar-control-minimize:focus,
@@ -70,7 +65,7 @@
 
 .TitleBar-control-minimize {
   background-image: url('https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fbutton_minimize.png?1529523359033');
-  margin-right: 0 !important;
+  margin-right: 1px !important;
 }
 
 .TitleBar-control-maximize {
