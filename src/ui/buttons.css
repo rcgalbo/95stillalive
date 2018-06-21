@@ -1,39 +1,74 @@
 button {
   margin: 0;
   margin-right: 6px;
-  border-top: 1px solid white;
-  border-left: 1px solid white;
-  border-right: 1px solid #868a8e;
-  border-bottom: 1px solid #868a8e;
-  box-shadow: 1px 0 0 0 black, 0 1px 0 0 black, 1px 1px 0 0 black;
+  border-top: 1px solid var(--ui-emboss-highlight-color);
+  border-left: 1px solid var(--ui-emboss-highlight-color);
+  border-right: 1px solid var(--ui-emboss-inner-shadow-color);
+  border-bottom: 1px solid var(--ui-emboss-inner-shadow-color);
+  box-shadow: 1px 0 0 0 var(--ui-emboss-outer-shadow-color), 0 1px 0 0 var(--ui-emboss-outer-shadow-color), 1px 1px 0 0 var(--ui-emboss-outer-shadow-color);
   background-color: var(--ui-base-color);
   font-family: var(--font-family);
   font-size: var(--font-size);
-  color: black;
+  color: var(--font-color);
   cursor: default;
   user-select: none;
 }
 
-button:not(.button-icon):not(.win95-window-maximize):not(.win95-window-minimize):not(.floating-panel-close):focus {
+.button-text {
+  padding: 4px;
+  min-width: 72px;
+}
+
+/* Buttons that are only icons */
+.button-icon {
+  text-align: center;
+  padding: 0;
+  margin: 0;
+
+  /* Default size. Can be overridden by other classes to fit UI. */
+  width: 21px;
+  height: 20px;
+}
+
+/* Override focus style */
+.button-icon:focus {
+  outline: none;
+}
+
+.button-icon .btm {
+  padding-right: 0;
+  margin: 0;
+  font-size: var(--font-size);
+}
+
+button:last-of-type {
+  margin-right: 0;
+}
+
+button:first-of-type {
+  margin-left: 0;
+}
+
+button:not(.button-icon):focus {
   outline: 1px dotted black;
   outline-offset: -4px;
   border: 1px solid black;
-  box-shadow: 1px 0 0 0 black, 0 1px 0 0 black, 1px 1px 0 0 black, inset 1px 1px 0 0 white, inset -1px -1px 0 0 #868a8e;
+  box-shadow: 1px 0 0 0 black, 0 1px 0 0 black, 1px 1px 0 0 black, inset 1px 1px 0 0 white, inset -1px -1px 0 0 var(--ui-emboss-inner-shadow-color);
 }
 
 button:active {
   border-top: 1px solid black;
   border-left: 1px solid black;
-  border-bottom: 1px solid #868a8e;
-  border-right: 1px solid #868a8e;
-  box-shadow: inset 1px 1px 0 0 #868a8e, 1px 1px 0 0 black, 1px 0 0 0 black, 0 1px 0 0 black;
-  padding-top: 5px;
+  border-bottom: 1px solid var(--ui-emboss-inner-shadow-color);
+  border-right: 1px solid var(--ui-emboss-inner-shadow-color);
+  box-shadow: inset 1px 1px 0 0 var(--ui-emboss-inner-shadow-color), 1px 1px 0 0 black, 1px 0 0 0 black, 0 1px 0 0 black;
+/*   padding-top: 5px;
   padding-left: 6px;
-  padding-bottom: 3px;
+  padding-bottom: 3px; */
 }
 
 button:disabled {
-  color: #868a8e;
+  color: var(--ui-emboss-inner-shadow-color);
   cursor: default;
   text-shadow: 1px 1px 0 white;
 }

@@ -1,10 +1,11 @@
-import React, { Component } from 'react'
-import Taskbar from './components/Taskbar'
-import Window from './components/Window'
-
+// Import CSS first so these styles are lower in the priority stack
 import './Windows95.css'
 import './ui/scrollbars.css'
 import './ui/buttons.css'
+
+import React, { Component } from 'react'
+import Taskbar from './components/Taskbar'
+import Window from './components/Window'
 
 class Windows95 extends Component {
   render () {
