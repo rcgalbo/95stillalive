@@ -1,8 +1,8 @@
 # Windows 95
 
-**What the _what_??** Yes, this is a completely written-from-scratch expert mimicry of Windows 95, built entirely out of web technologies. It's not an [emulator](https://win95.ajf.me/win95.html) (which is slow) and it's not a port. It's HTML5 and React!
+**What the _what_??** Yes, this is a completely written-from-scratch expert mimicry of Windows 95, built entirely out of web technologies. It's not an [emulator](https://win95.ajf.me/win95.html) (which is slow) and it's not a port (which you can't edit). It's HTML5 and React! And it's hackable!
 
-The genesis of this work came from [an April Fool's Day gag](https://mapzen.com/blog/tangram-work-developer-commentary/) at Mapzen (RIP) where we released an "enterprise" version of our web-based map editor called Tangram Work, and as part of the joke, made it look exactly like a Windows 95 application, but it ran in Electron on Mac, Linux, and modern Windows. During the course of its development, I'd felt that if I wanted to put some extra effort into it, it really would be possible to build a more generic UI framework that's really just Windows 95.
+The genesis of this work came from [an April Fool's Day gag](https://mapzen.com/blog/tangram-work-developer-commentary/) at Mapzen (RIP) where we released an "enterprise" version of our web-based map editor called Tangram Work, and as part of the joke, made it look exactly like a Windows 95 application, but it ran in Electron on Mac, Linux, and modern Windows. During the course of its development, I'd felt that if I wanted to put some extra effort into it, it really would be possible to build a more generic UI framework that's really just Windows 95. And then _every company_ can make their own nostalgic April Fool's joke, if they want.
 
 So here is the next phase. I've put it on Glitch because (1) you should be able to run it and see it immediately in your browser and (2) I want to give its social coding features a try. It's possible this can reasonably look and feel just like Windows 95 and I would love to get collaborators on board to help build out all the features.
 
@@ -10,9 +10,26 @@ Some ground rules:
 
 1. If it's in the original Windows 95, it's in.
 2. If it's something not in the original Windows 95, but you think it should be, let's talk.
+3. 
 3. This repository should "run" Windows 95 out of the box.
-4. It should be relatively easy for an intermediate level developer to customize their experience.
-5. 
+4. The code should be organized in a way to make customization easy.
+5. This should be embeddable in another application.
+6. Where possible, use HTML5 and ES6. Keep dependencies and build process to a minimum (but let's not be dogmatic about it).
+7. Framework is React/Redux.
+8. Write tests.
+
+I don't know if Glitch has an issues tracker (we may need to attach one) but in the meantime here is a short todo list:
+
+- Add Redux.
+- Adopt Typescript?
+- Add PostCSS mixins.
+- Add [react-dnd](https://github.com/react-dnd/react-dnd) for drag and drop functionality.
+- Add [React Transition Group](https://github.com/reactjs/react-transition-group) for transitions.
+- Write tests.
+
+### Want to help?
+
+This project would benefit from more front-end developers and perhaps a project manager or two. I'm not entirely sure how to on-board people onto a Glitch project without forking it, but shoot me a message on Twitter at @saikofish and let's try to figure this out!
 
 
 
