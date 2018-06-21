@@ -9,6 +9,12 @@ class Windows95 extends Component {
   render () {
     return (
       <div className="Windows95-desktop Windows95-desktop-background">
+        <div className="desktop-icons">
+          <div className="desktop-icon">
+            <img src="https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fwin95_icon_computer.png?1529547438480" width={32} height={32} alt="" />
+            <p>My Computer</p>
+          </div>
+        </div>
         <Taskbar />
         <Window width={400} height={350} x={document.documentElement.clientWidth / 2 - 200} y={document.documentElement.clientHeight / 2 - 175} />
       </div>
