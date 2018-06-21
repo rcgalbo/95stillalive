@@ -6,7 +6,8 @@
     "create-react-app": "^1.5.2",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
-    "react-dnd": "^5.0.0"
+    "react-dnd": "^5.0.0",
+    "react-dnd-html5-backend": "^5.0.1"
   },
   "proxy": "https://windows95.glitch.me",
   "devDependencies": {
