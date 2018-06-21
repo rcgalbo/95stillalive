@@ -10,13 +10,13 @@ Some ground rules:
 
 1. If it's in the original Windows 95, it's in.
 2. If it's something not in the original Windows 95, but you think it should be, let's talk.
-3. 
-3. This repository should "run" Windows 95 out of the box.
-4. The code should be organized in a way to make customization easy.
-5. This should be embeddable in another application.
-6. Where possible, use HTML5 and ES6. Keep dependencies and build process to a minimum (but let's not be dogmatic about it).
-7. Framework is React/Redux.
-8. Write tests.
+3. If it's not in the original Windows 95, think about how you would build this to allow someone like yourself to extend this code in order to have it on their own deployment.
+4. Related: the code should be organized in a way to make customization easy.
+5. This repository should "run" Windows 95 out of the box.
+6. This should be embeddable in another application.
+7. Where possible, use HTML5 and ES6. Keep dependencies and build process to a minimum (but let's not be dogmatic about it).
+8. Framework is React/Redux.
+9. Write tests.
 
 I don't know if Glitch has an issues tracker (we may need to attach one) but in the meantime here is a short todo list:
 
