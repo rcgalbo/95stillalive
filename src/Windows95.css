@@ -119,5 +119,16 @@ button {
 }
 
 .desktop-icon {
-  width:
+  width: 72px;
+  height: 72px;
+  margin-left: 1px;
+  margin-bottom: 3px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+}
+
+.desktop-icon img {
+  margin-top: 2px;
 }
