@@ -1,3 +1,14 @@
+# Windows 95
+
+**What the _what_??** Yes, this is a completely written-from-scratch expert mimicry of Windows 95, built entirely out of web technologies. It's not an [emulator](https://win95.ajf.me/win95.html) (which is slow) and it's not a port. It's HTML5 and React!
+
+The genesis of this work came from [an April Fool's Day gag](https://mapzen.com/blog/tangram-work-developer-commentary/) at Mapzen (RIP) where we released an "enterprise" version of our web-based map editor called Tangram Work, and as part of the
+
+
+---
+
+# Create React App README
+
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
@@ -6,6 +17,7 @@ You can find the most recent version of this guide [here](https://github.com/fac
 ## Remixing in Glitch
 
 To make the auto-reload feature work, edit the `proxy` option in `package.json` to point to your Glitch app.
+
 
 ## Table of Contents
 
