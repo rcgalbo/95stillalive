@@ -2,7 +2,18 @@
 
 **What the _what_??** Yes, this is a completely written-from-scratch expert mimicry of Windows 95, built entirely out of web technologies. It's not an [emulator](https://win95.ajf.me/win95.html) (which is slow) and it's not a port. It's HTML5 and React!
 
-The genesis of this work came from [an April Fool's Day gag](https://mapzen.com/blog/tangram-work-developer-commentary/) at Mapzen (RIP) where we released an "enterprise" version of our web-based map editor called Tangram Work, and as part of the
+The genesis of this work came from [an April Fool's Day gag](https://mapzen.com/blog/tangram-work-developer-commentary/) at Mapzen (RIP) where we released an "enterprise" version of our web-based map editor called Tangram Work, and as part of the joke, made it look exactly like a Windows 95 application, but it ran in Electron on Mac, Linux, and modern Windows. During the course of its development, I'd felt that if I wanted to put some extra effort into it, it really would be possible to build a more generic UI framework that's really just Windows 95.
+
+So here is the next phase. I've put it on Glitch because (1) you should be able to run it and see it immediately in your browser and (2) I want to give its social coding features a try. It's possible this can reasonably look and feel just like Windows 95 and I would love to get collaborators on board to help build out all the features.
+
+Some ground rules:
+
+1. If it's in the original Windows 95, it's in.
+2. If it's something not in the original Windows 95, but you think it should be, let's talk.
+3. This repository should "run" Windows 95 out of the box.
+4. It should be relatively easy for an intermediate level developer to customize their experience.
+5. 
+
 
 
 ---
