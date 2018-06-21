@@ -32,7 +32,7 @@ class TitleBar extends Component {
           <div className="TitleBar-text">{title}</div>
         </div>
         <div className="TitleBar-controls">
-          <button className="TitleBar-control-minimize" onClick={this.onClickMinimize} />
+          <button className="TitleBar-control-minimize button-" onClick={this.onClickMinimize} />
           <button className="TitleBar-control-maximize" onClick={this.onClickMaximize} />
           <button className="TitleBar-control-close" onClick={this.onClickClose} />
         </div>

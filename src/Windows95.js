@@ -4,6 +4,7 @@ import Window from './components/Window'
 
 import './Windows95.css'
 import './ui/scrollbars.css'
+import './ui/buttons.css'
 
 class Windows95 extends Component {
   render () {
