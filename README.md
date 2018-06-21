@@ -26,6 +26,7 @@ I don't know if Glitch has an issues tracker (we may need to attach one) but in 
 - Add PostCSS mixins.
 - Add [react-dnd](https://github.com/react-dnd/react-dnd) for drag and drop functionality.
 - Add [React Transition Group](https://github.com/reactjs/react-transition-group) for transitions.
+- Add [React Storybook](https://storybook.js.org/) to document UI components.
 - Write tests.
 
 ### Want to help?
