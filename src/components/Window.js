@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
 import TitleBar from './TitleBar'
+import MenuBar from './MenuBar'
 import './Window.css'
 
 class Window extends Component {
@@ -15,7 +16,7 @@ class Window extends Component {
     return (
       <div className="Window" style={style}>
         <TitleBar handleClose={() => {}} />
-        <div className="MenuBar" />
+        <MenuBar />
 
         <div className="Window-main">
           <div className="frame win95-well-border">
