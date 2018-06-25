@@ -7,7 +7,8 @@ class MenuBar extends Component {
       <div className="MenuBar">
         <div className="MenuBarItem">File</div>
         <div className="MenuBarItem">Edit</div>
-        <div className="MenuBarItem">Edit</div>
+        <div className="MenuBarItem">View</div>
+        <div className="MenuBarItem">Help</div>
       </div>
     )
   }
