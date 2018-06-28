@@ -2,6 +2,7 @@
 /* CSS Variables */
 .Windows95-desktop {
   --ui-main-color: #c3c7cb;
+  --ui-highlight-color: #0314a6;
 
   --ui-emboss-highlight-color: white;
   --ui-emboss-inner-shadow-color: #868a8e;
@@ -14,6 +15,7 @@
   --font-color: black;
 
   --editor-font-family: 'Courier New', monospace;
+  
   
 /* 
   --ui-editor-background-color: #1c1f24;

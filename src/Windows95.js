@@ -4,8 +4,8 @@ import './ui/scrollbars.css'
 import './ui/buttons.css'
 
 import React, { Component } from 'react'
-import Taskbar from './components/Taskbar'
-import Window from './components/Window'
+import Taskbar from './components/Taskbar/Taskbar'
+import Window from './components/Window/Window'
 
 class Windows95 extends Component {
   render () {

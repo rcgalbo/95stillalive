@@ -1,0 +1,17 @@
+.MenuBar {
+  min-height: 20px;
+}
+
+.MenuBarItem {
+  display: inline-block;
+  height: 18px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-top: 4px;
+  margin-top: 1px;  
+}
+
+.MenuBarItem:hover {
+  background-color: var(--ui-highlight-color);
+  color: white;
+}

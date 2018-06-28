@@ -1,5 +1,5 @@
 .TitleBar {
-  background-color: #00a;
+  background-color: var(--ui-highlight-color);
 }
 
 .TitleBar-container {
