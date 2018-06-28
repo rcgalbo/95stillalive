@@ -15,7 +15,7 @@ class Window extends Component {
 
     return (
       <div className="Window" style={style}>
-        <TitleBar handleClose={() => {}} icon="https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fpicture_icon.png?1529523359727" />
+        <TitleBar handleClose={() => {}} icon="computer" />
         <MenuBar />
 
         <div className="Window-main">

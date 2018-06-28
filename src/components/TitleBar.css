@@ -1,24 +1,25 @@
 .TitleBar {
   background-color: #00a;
-  height: 18px;
 }
 
 .TitleBar-container {
   display: flex;
+  height: 18px;
+  padding-left: 3px;
 }
 
 .TitleBar-icon {
   width: 16px;
   height: 16px;
   margin-top: 1px;
-  margin-left: 2px;
-  margin-right: 4px;
+  margin-right: 3px;
 }
 
 .TitleBar-text {
   flex-grow: 1;
   font-weight: 600;
   color: white;
+  margin-top: 3px; /* Should actually render as 4px from top of X to top of bar */
 }
 
 .TitleBar-control-minimize,
