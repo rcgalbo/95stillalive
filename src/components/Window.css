@@ -1,12 +1,12 @@
 .Window {
-  display: block; /* Default display mode */
+  display: flex; /* Default display mode */
+  flex-direction: column;
   position: absolute;
   width: 250px;
   padding: 3px;
   font-weight: 200;
   color: var(--ui-component-text-color);
   background-color: var(--ui-main-color);
-  pointer-events: auto;
   border-top: 1px solid #c3c7cb;
   border-left: 1px solid #c3c7cb;
   border-right: 1px solid #000;
