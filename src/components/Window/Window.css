@@ -41,7 +41,7 @@
 .Window-main {
   width: 100%;
   height: calc(100% - 22px);
-  margin-top: 3px;
+  margin-top: 1px;
 }
 
 .frame {

@@ -8,6 +8,14 @@
   font-weight: 600;
 }
 
+.StartButton:active {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-bottom: 1px solid var(--ui-emboss-inner-shadow-color);
+  border-right: 1px solid var(--ui-emboss-inner-shadow-color);
+  box-shadow: inset 1px 1px 0 0 var(--ui-emboss-inner-shadow-color);
+}
+
 .StartButton-icon {
   width: 16px;
   height: 16px;
