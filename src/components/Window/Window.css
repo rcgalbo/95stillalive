@@ -1,6 +1,5 @@
 .Window {
-  display: flex; /* Default display mode */
-  flex-direction: column;
+  display: block; /* Default display mode */
   position: absolute;
   width: 250px;
   padding: 3px;
@@ -12,6 +11,13 @@
   border-right: 1px solid #000;
   border-bottom: 1px solid #000;
   box-shadow: inset 1px 1px 0 #fff, inset -1px -1px 0 #868a8e;
+}
+
+.Window-container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
 }
 
 .win95-well-border {
@@ -39,9 +45,7 @@
 }
 
 .Window-main {
-  width: 100%;
-  height: calc(100% - 22px);
-  margin-top: 1px;
+  height: calc(100% - 38px);
 }
 
 .frame {
