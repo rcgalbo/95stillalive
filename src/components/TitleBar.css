@@ -1,12 +1,10 @@
 .TitleBar {
-  display: flex;
-  justify-content: space-between;
   background-color: #00a;
   height: 18px;
-  color: white;
 }
 
-.TitleBar-title {
+.TitleBar-container {
+  display: flex;
 }
 
 .TitleBar-icon {
@@ -18,10 +16,9 @@
 }
 
 .TitleBar-text {
-  display: inline-block;
-  position: absolute;
-  top: 3px;
+  flex-grow: 1;
   font-weight: 600;
+  color: white;
 }
 
 .TitleBar-control-minimize,
