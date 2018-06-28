@@ -8,12 +8,22 @@
   font-weight: 600;
 }
 
-.StartButton:active {
-  border-top: 1px solid black;
-  border-left: 1px solid black;
-  border-bottom: 1px solid var(--ui-emboss-inner-shadow-color);
-  border-right: 1px solid var(--ui-emboss-inner-shadow-color);
-  box-shadow: inset 1px 1px 0 0 var(--ui-emboss-inner-shadow-color);
+.StartButton:active:not(:focus) {
+  border-top: 1px solid var(--ui-emboss-outer-shadow-color) !important;
+  border-left: 1px solid var(--ui-emboss-outer-shadow-color) !important;
+  border-bottom: 1px solid var(--ui-emboss-highlight-color) !important;
+  border-right: 1px solid var(--ui-emboss-highlight-color) !important;
+  box-shadow: inset 1px 1px 0 0 var(--ui-emboss-inner-shadow-color) !important;
+}
+
+.StartButton:focus {
+  /* Unlike normal buttons, there's no extra border on focus state
+     This sets the border to the same as normal state. */
+  border-top: 1px solid var(--ui-emboss-highlight-color) !important;
+  border-left: 1px solid var(--ui-emboss-highlight-color) !important;
+  border-right: 1px solid var(--ui-emboss-outer-shadow-color) !important;
+  border-bottom: 1px solid var(--ui-emboss-outer-shadow-color) !important;
+  box-shadow: inset -1px -1px 0 0 var(--ui-emboss-inner-shadow-color) !important;
 }
 
 .StartButton-icon {
@@ -24,8 +34,18 @@
   top: 2px;
 }
 
+.StartButton:active .StartButton-icon {
+  left: 4px;
+  top: 3px;
+}
+
 .StartButton-label {
   position: absolute;
   left: 22px;
   top: 5px;
+}
+
+.StartButton:active .StartButton-label {
+  left: 23px;
+  top: 6px;
 }
