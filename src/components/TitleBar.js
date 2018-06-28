@@ -6,33 +6,34 @@ class TitleBar extends Component {
   constructor (props) {
     super(props)
 
-    this.onClickMinimize = this.onClickMinimize.bind(this)
-    this.onClickMaximize = this.onClickMaximize.bind(this)
-    this.onClickClose = this.onClickClose.bind(this)
+    this.handleMinimize = this.handleMinimize.bind(this)
+    this.handleMaximize = this.handleMaximize.bind(this)
+    this.handleClose = this.handleClose.bind(this)
   }
 
-  onClickMinimize (event) {
+  handleMinimize (event) {
   }
   
-  onClickMaximize (event) {
+  handleMaximize (event) {
   }
   
-  onClickClose (event) {
+  handleClose (event) {
     this.props.handleClose()
   }
 
   render () {
-    const { iconUrl, title } = this.props
+    const { icon, title } = this.props
 
     return (
       <div className="TitleBar">
         <div className="TitleBar-container">
-          <img className="TitleBar-icon" src={iconUrl} onDoubleClick={this.onClickClose} />
+          {/* The icon is optional. */}
+          {icon && <img className="TitleBar-icon" src={icon} onDoubleClick={this.handleClose} />}
           <div className="TitleBar-text">{title}</div>
           <div className="TitleBar-controls">
-            <button className="TitleBar-control-minimize button-icon" onClick={this.onClickMinimize} />
-            <button className="TitleBar-control-maximize button-icon" onClick={this.onClickMaximize} />
-            <button className="TitleBar-control-close button-icon" onClick={this.onClickClose} />
+            <button className="TitleBar-control-minimize button-icon" onClick={this.handleMinimize} />
+            <button className="TitleBar-control-maximize button-icon" onClick={this.handleMaximize} />
+            <button className="TitleBar-control-close button-icon" onClick={this.handleClose} />
           </div>
         </div>
       </div>
@@ -41,13 +42,13 @@ class TitleBar extends Component {
 }
 
 TitleBar.propTypes = {
-  iconUrl: PropTypes.string,
+  icon: PropTypes.string,
   title: PropTypes.string,
   handleClose: PropTypes.func
 }
 
 TitleBar.defaultProps = {
-  iconUrl: 'https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fpicture_icon.png?1529523359727',
+  icon: null,
   title: 'Window',
   handleClose: () => {}
 }
