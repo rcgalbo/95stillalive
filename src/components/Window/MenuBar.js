@@ -18,8 +18,13 @@ class MenuBar extends Component {
     })
   }
     
-  renderMenuBarItem (label, isSelected) {
+  renderMenuBarItem (label, keybind, isSelected) {
     const classNames = ['MenuBarItem']
+    
+    let keybindPosition
+    if (keybind) {
+      label.toLowercase().indexOf(keybind.toLowerCase())
+    }
     
     if (isSelected) {
       classNames.push('MenuBarItem-selected')
@@ -29,7 +34,7 @@ class MenuBar extends Component {
   }
   
   renderMenuBarItems (labels, whichSelected) {
-    return labels.map(label => this.renderMenuBarItem(label, label === whichSelected))
+    return labels.map(label => this.renderMenuBarItem(label, label.slice(0,1), label === whichSelected))
   }
 
   render () {
