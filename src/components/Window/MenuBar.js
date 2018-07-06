@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import log from '../../util/log'
 import './MenuBar.css'
 
 class MenuBar extends Component {
@@ -21,24 +22,64 @@ class MenuBar extends Component {
   renderMenuBarItem (label, keybind, isSelected) {
     const classNames = ['MenuBarItem']
     
+    // Underline the keybound label
     let keybindPosition
+    let displayLabel
     if (keybind) {
-      label.toLowercase().indexOf(keybind.toLowerCase())
+      keybindPosition = label.toLowerCase().indexOf(keybind.toLowerCase())
+
+      // Warn if the keybinding is not found.
+      if (keybindPosition === -1) {
+        log.error(`keybinding "${keybind}" not found for label "${label}"`)
+      }
     }
-    
+    if (keybindPosition >= 0) {
+      // Splits the label into a fragment so that the keybinding is underlined.
+      displayLabel = (
+        <React.Fragment>
+          {label.slice(0, keybindPosition)}
+          <u>{label[keybindPosition]}</u>
+          {label.slice(keybindPosition + 1)}
+        </React.Fragment>
+      )
+    } else {
+      displayLabel = label
+    }
+  
     if (isSelected) {
       classNames.push('MenuBarItem-selected')
     }
     
-    return <div key={label} className={classNames.join(' ')} onClick={(event) => this.handleMenuItemClick(event, label)}>{label}</div>
+    return (
+      <div key={label} className={classNames.join(' ')} onClick={(event) => this.handleMenuItemClick(event, label)}>
+        {displayLabel}
+      </div>
+    )
   }
   
   renderMenuBarItems (labels, whichSelected) {
-    return labels.map(label => this.renderMenuBarItem(label, label.slice(0,1), label === whichSelected))
+    return labels.map(label => this.renderMenuBarItem(label.text, label.keybind, label.text === whichSelected))
   }
 
   render () {
-    const labels = ['File', 'Edit', 'View', 'Help']
+    const labels = [
+      {
+        text: 'File',
+        keybind: 'F'
+      },
+      {
+        text: 'Edit',
+        keybind: 'E'
+      },
+      {
+        text: 'View',
+        keybind: 'V'
+      },
+      {
+        text: 'Help',
+        keybind: 'H'
+      }
+    ]
     const menuItems = this.renderMenuBarItems(labels, this.state.whichSelected)
 
     return (
