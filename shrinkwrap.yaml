@@ -6672,7 +6672,7 @@ packages:
     resolution:
       integrity: sha1-eC7CHvQDNF+DCoCMo9UTr1YGUgg=
 registry: 'https://registry.npmjs.org/'
-shrinkwrapMinorVersion: 8
+shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
   create-react-app: ^1.5.2
