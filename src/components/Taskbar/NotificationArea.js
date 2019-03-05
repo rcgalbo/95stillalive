@@ -1,14 +1,26 @@
-import React, { Component } from 'react'
-import './NotificationArea.css'
+import React, { Component } from "react";
+import "./NotificationArea.css";
 
 class NotificationArea extends Component {
-  render () {
+  constructor(props) {
+    super(props);
+    this.state = { date: new Date() };
+  }
+  componentDidMount() {
+    this.timeID = setInterval(() => this.handleTimer(), 1000);
+  }
+
+  handleTimer() {
+    this.setState({ date: new Date() });
+  }
+
+  render() {
     return (
       <div className="NotificationArea">
-        13:19
+        {this.state.date.getHours()}:{this.state.date.getMinutes()}
       </div>
-    )
+    );
   }
 }
 
-export default NotificationArea
+export default NotificationArea;
