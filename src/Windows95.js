@@ -1,31 +1,41 @@
 // Import CSS first so these styles are lower in the priority stack
-import './Windows95.css'
-import './ui/scrollbars.css'
-import './ui/buttons.css'
+import "./Windows95.css";
+import "./ui/scrollbars.css";
+import "./ui/buttons.css";
 
-import React, { Component } from 'react'
-import Taskbar from './components/Taskbar/Taskbar'
-import Window from './components/Window/Window'
+import React, { Component } from "react";
+import Taskbar from "./components/Taskbar/Taskbar";
+import Window from "./components/Window/Window";
+import Icon from "./components/Icon/Icon";
 
 class Windows95 extends Component {
-  render () {
+  render() {
     return (
       <div className="Windows95-desktop Windows95-desktop-background">
         <div className="desktop-icons">
-          <div className="desktop-icon">
-            <img src="https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fwin95_icon_computer.png?1529547438480" width={32} height={32} alt="" />
-            <p>My Computer</p>
-          </div>
-          <div className="desktop-icon">
-            <img src="https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fwin95_icon_recycle.png?1529547438543" width={32} height={32} alt="" />
-            <p>Recycle Bin</p>
-          </div>
+          <Icon
+            name="My Computer"
+            src="https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fwin95_icon_computer.png?1529547438480"
+          />
+          <Icon
+            name="Recycle Bin"
+            src="https://cdn.glitch.com/87ebf192-d762-4a8c-b219-92029a8531ce%2Fwin95_icon_recycle.png?1529547438543"
+          />
+          <Icon
+            name="Files"
+            src="https://cdn.glitch.com/fcca123f-05cd-4716-a7ba-aebe6c6aaff2%2Fbriefcase.png?1506581809139"
+          />
         </div>
         <Taskbar />
-        <Window width={400} height={350} x={document.documentElement.clientWidth / 2 - 200} y={document.documentElement.clientHeight / 2 - 175} />
+        <Window
+          width={400}
+          height={350}
+          x={document.documentElement.clientWidth / 2 - 200}
+          y={document.documentElement.clientHeight / 2 - 175}
+        />
       </div>
-    )
+    );
   }
 }
 
-export default Windows95
+export default Windows95;
