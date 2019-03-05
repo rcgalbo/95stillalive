@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Draggable from 'react-draggable';
 import PropTypes from 'prop-types'
 import TitleBar from './TitleBar'
 import MenuBar from './MenuBar'
@@ -14,20 +15,23 @@ class Window extends Component {
     }
 
     return (
-      <div className="Window" style={style}>
-        <div className="Window-container">
-          <TitleBar handleClose={() => {}} icon="computer" />
-          <MenuBar />
-
-          <div className="Window-main">
-            <div className="frame win95-well-border">
-              <div className="content">
-                <p>feelin cute, might delete later</p>
+      <Draggable handle=".handle">
+        <div className="Window" style={style}>
+          <div className="Window-container">
+            <div className="handle">
+              <TitleBar handleClose={() => {}} icon="computer" />
+            </div>
+              <MenuBar />
+            <div className="Window-main">
+              <div className="frame win95-well-border">
+                <div className="content">
+                  <p>feelin cute, might delete later</p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </Draggable>
     )
   }
 }
