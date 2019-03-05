@@ -8,7 +8,7 @@ class Icon extends Component {
       <Draggable handle=".handle" grid={[25,25]}>
         <div className="desktop-icon">
           <div class="handle">
-            <img src={this.props.src} width={32} height={32} alt=""/>
+            <img src={this.props.src} width={32} height={32} alt="" draggable="false"/>
           </div>
           <p>{this.props.name}</p>
         </div>
