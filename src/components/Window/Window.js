@@ -41,8 +41,6 @@ class Window extends Component {
 }
 
 Window.propTypes = {
-  title: PropTypes.string,
-  iconUrl: PropTypes.string,
   width: PropTypes.number,
   height: PropTypes.number,
   x: PropTypes.number,
