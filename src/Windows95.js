@@ -7,6 +7,7 @@ import React, { Component } from "react";
 import Taskbar from "./components/Taskbar/Taskbar";
 import Window from "./components/Window/Window";
 import Icon from "./components/Icon/Icon";
+import TwitterFeed from "./components/Window/TwitterFeed";
 
 class Windows95 extends Component {
   render() {
@@ -25,12 +26,8 @@ class Windows95 extends Component {
           src="https://cdn.glitch.com/fcca123f-05cd-4716-a7ba-aebe6c6aaff2%2Fbriefcase.png?1506581809139"
         />
         <Taskbar />
-        <Window
-          width={400}
-          height={350}
-          x={document.documentElement.clientWidth / 2 - 200}
-          y={document.documentElement.clientHeight / 2 - 175}
-        />
+        <Window />
+        <TwitterFeed />
       </div>
     );
   }

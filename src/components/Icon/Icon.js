@@ -28,4 +28,9 @@ Icon.propTypes = {
   src: PropTypes.string
 };
 
+Icon.defaultProps = {
+  name: "Icon",
+  src: "https://cdn.glitch.com/fcca123f-05cd-4716-a7ba-aebe6c6aaff2%2Fwelcome_16928.ico?1507519225165",
+}
+
 export default Icon;
