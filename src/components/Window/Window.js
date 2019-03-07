@@ -1,6 +1,8 @@
 import React, { Component } from "react";
+import { getRandomLocation } from "./../../utils/utils"
 import Draggable from "react-draggable";
 import PropTypes from "prop-types";
+
 import TitleBar from "./TitleBar";
 import MenuBar from "./MenuBar";
 import "./Window.css";
@@ -51,8 +53,8 @@ Window.defaultProps = {
   content: <p>feelin cute, might delete later</p>,
   width: 400,
   height: 350,
-  x: document.documentElement.clientWidth / 2 - 200,
-  y: document.documentElement.clientHeight / 2 - 175
+  x: getRandomLocation(),
+  y: getRandomLocation(),
 };
 
 export default Window;

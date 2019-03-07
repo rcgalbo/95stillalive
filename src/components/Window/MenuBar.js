@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import log from '../../util/log'
+import log from '../../utils/log'
 import './MenuBar.css'
 
 class MenuBar extends Component {
