@@ -8,6 +8,7 @@ import Taskbar from "./components/Taskbar/Taskbar";
 import Window from "./components/Window/Window";
 import Icon from "./components/Icon/Icon";
 import TwitterFeed from "./components/Apps/TwitterFeed";
+import MediaPlayer from "./components/Apps/MediaPlayer"
 
 class Windows95 extends Component {
   render() {
@@ -28,6 +29,7 @@ class Windows95 extends Component {
         <Taskbar />
         <Window />
         <TwitterFeed />
+        <MediaPlayer />
       </div>
     );
   }
