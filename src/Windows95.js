@@ -7,7 +7,7 @@ import React, { Component } from "react";
 import Taskbar from "./components/Taskbar/Taskbar";
 import Window from "./components/Window/Window";
 import Icon from "./components/Icon/Icon";
-import TwitterFeed from "./components/Window/TwitterFeed";
+import TwitterFeed from "./components/Apps/TwitterFeed";
 
 class Windows95 extends Component {
   render() {
