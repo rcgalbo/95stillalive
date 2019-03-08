@@ -15,7 +15,7 @@ function range(start, end, step) {
 }
 
 export function getRandomLocation() {
-  var choices = range(200, 600, 50);
+  var choices = range(200, 400, 50);
   return choices[Math.floor(Math.random() * choices.length)];
 }
 

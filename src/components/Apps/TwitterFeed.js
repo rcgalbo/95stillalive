@@ -21,7 +21,14 @@ class TwitterFeed extends Component {
     );
 
     return (
-      <Window title={title} iconUrl={iconUrl} content={content} x={x} y={y} />
+      <Window
+        title={title}
+        iconUrl={iconUrl}
+        content={content}
+        x={x}
+        y={y}
+        height={height}
+      />
     );
   }
 }
@@ -29,7 +36,8 @@ class TwitterFeed extends Component {
 TwitterFeed.defaultProps = {
   title: "Twitter",
   iconUrl:
-    "https://cdn.glitch.com/fcca123f-05cd-4716-a7ba-aebe6c6aaff2%2FTwitter_Logo_Blue.png?1506582674829"
+    "https://cdn.glitch.com/fcca123f-05cd-4716-a7ba-aebe6c6aaff2%2FTwitter_Logo_Blue.png?1506582674829",
+  height: 600
 };
 
 export default TwitterFeed;

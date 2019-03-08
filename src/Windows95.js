@@ -5,7 +5,6 @@ import "./ui/buttons.css";
 
 import React, { Component } from "react";
 import Taskbar from "./components/Taskbar/Taskbar";
-import Window from "./components/Window/Window";
 import Icon from "./components/Icon/Icon";
 import TwitterFeed from "./components/Apps/TwitterFeed";
 import MediaPlayer from "./components/Apps/MediaPlayer"
@@ -27,7 +26,6 @@ class Windows95 extends Component {
           src="https://cdn.glitch.com/fcca123f-05cd-4716-a7ba-aebe6c6aaff2%2Fbriefcase.png?1506581809139"
         />
         <Taskbar />
-        <Window />
         <TwitterFeed />
         <MediaPlayer />
       </div>
