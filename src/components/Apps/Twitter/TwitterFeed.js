@@ -1,8 +1,8 @@
 import React, { Component } from "react";
 import { Timeline } from "react-twitter-widgets";
-import { getRandomLocation } from "./../../utils/utils";
+import { getRandomLocation } from "../../../utils/utils";
 
-import Window from "./../Window/Window";
+import Window from "../../Window";
 
 class TwitterFeed extends Component {
   render() {

@@ -21,5 +21,10 @@ module.exports = {
       }
     ]
   },
+  devServer: {
+    contentBase: './dist/',
+    watchContentBase: true,
+
+  },
   plugins: [htmlWebpackPlugin]
 };

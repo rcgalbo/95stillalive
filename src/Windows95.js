@@ -4,9 +4,9 @@ import "./ui/scrollbars.css";
 import "./ui/buttons.css";
 
 import React, { Component } from "react";
-import Taskbar from "./components/Taskbar/Taskbar";
-import Icon from "./components/Icon/Icon";
-import TwitterFeed from "./components/Apps/TwitterFeed";
+import Taskbar from "./components/Taskbar";
+import Icon from "./components/Icon";
+import TwitterFeed from "./components/Apps/Twitter";
 import MediaPlayer from "./components/Apps/MediaPlayer"
 
 class Windows95 extends Component {

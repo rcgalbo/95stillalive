@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import { getRandomLocation } from "./../../utils/utils";
+import { getRandomLocation } from "../../../utils/utils";
 import { Media, Player, controls, utils } from "react-media-player";
 
-import Window from "../Window/Window";
+import Window from "../../Window/";
 
 class MediaPlayer extends Component {
   render() {
