@@ -14,8 +14,8 @@ class TwitterFeed extends Component {
 
     const content = (
       <Timeline
-        dataSource={{ sourceType: "profile", screenName: "RickGalbo" }}
-        options={{ username: "RickGalbo", height: { height } }}
+        dataSource={{ sourceType: "profile", screenName: "rc/galbo" }}
+        options={{ username: "rcgalbo", height: { height } }}
         onLoad={() => console.log("Timeline is loaded!")}
       />
     );

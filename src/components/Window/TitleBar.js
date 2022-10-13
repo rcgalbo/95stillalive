@@ -23,13 +23,13 @@ class TitleBar extends Component {
 
 
   render () {
-    const { title, iconUrl  } = this.props
+    const { title, iconUrl, iconName  } = this.props
     
     return (
       <div className="TitleBar">
         <div className="TitleBar-container">
           {/* The icon is optional. */}
-          {<img className="TitleBar-icon" src={iconUrl} onDoubleClick={this.handleClose} />}
+          {<img className="TitleBar-icon" src={iconUrl} onDoubleClick={this.handleClose} alt={iconName}/>}
           <div className="TitleBar-text">{title}</div>
           <div className="TitleBar-controls">
             <button className="TitleBar-control-minimize button-icon" onClick={this.handleMinimize} />

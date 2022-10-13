@@ -34,7 +34,7 @@
     "node": "8.x"
   },
   "scripts": {
-    "start": "webpack-dev-server --hot --inline",
+    "start": "node ./node_modules/react-scripts/bin/react-scripts.js start",
     "build": "webpack --mode production"
   },
   "license": "MIT"

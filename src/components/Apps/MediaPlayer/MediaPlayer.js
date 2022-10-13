@@ -30,7 +30,7 @@ class MediaPlayer extends Component {
             onKeyDown={keyboardControls.bind(null, mediaProps)}
           >
             <div className="media-player">
-              <Player src="https://www.youtube.com/watch?v=-9AgtEbTsbQ" />
+              <Player src="https://www.youtube.com/watch?v=cBWwuBwaSNI&t=816s" />
             </div>
             <div className="media-controls">
               <PlayPause />
