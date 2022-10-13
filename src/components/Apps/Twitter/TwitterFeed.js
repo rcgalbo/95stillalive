@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import { Timeline } from "react-twitter-widgets";
+// import { Timeline } from "react-twitter-widgets";
+import { Feed } from "./Feed.js"
 import { getRandomLocation } from "../../../utils/utils";
 
 import Window from "../../Window";
@@ -13,11 +14,12 @@ class TwitterFeed extends Component {
     const y = getRandomLocation();
 
     const content = (
-      <Timeline
-        dataSource={{ sourceType: "profile", screenName: "rc/galbo" }}
-        options={{ username: "rcgalbo", height: { height } }}
-        onLoad={() => console.log("Timeline is loaded!")}
-      />
+      // <Timeline
+      //   dataSource={{ sourceType: "profile", screenName: "rc/galbo" }}
+      //   options={{ username: "rcgalbo", height: { height } }}
+      //   onLoad={() => console.log("Timeline is loaded!")}
+      // />
+      <Feed />
     );
 
     return (

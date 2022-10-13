@@ -6,7 +6,7 @@ export function  getRandomInt(min, max) {
 }
 
 function range(start, end, step) {
-  var rangeArray = new []();
+  var rangeArray = ([]);
   while (start < end) {
     rangeArray.push(start);
     start += step;
